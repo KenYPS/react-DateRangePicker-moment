@@ -125,7 +125,7 @@ const CalendarWrap = styled.div`
   background: #ffffff;
   z-index: 10000;
   ${({ calendarPosition }) =>
-    calendarPosition === 'right' ? { right: 0 } : { left: 0 }}
+    calendarPosition === 'right' ? { right: 0 } : { }}
   ${media.tablet`
     width:388px;
 `};
