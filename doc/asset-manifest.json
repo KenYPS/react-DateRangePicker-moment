@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-DateRangePicker-moment/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/react-DateRangePicker-moment/static/js/main.201baf66.chunk.js",
+    "main.js.map": "/react-DateRangePicker-moment/static/js/main.201baf66.chunk.js.map",
+    "runtime-main.js": "/react-DateRangePicker-moment/static/js/runtime-main.589799a2.js",
+    "runtime-main.js.map": "/react-DateRangePicker-moment/static/js/runtime-main.589799a2.js.map",
+    "static/js/2.49d7fd12.chunk.js": "/react-DateRangePicker-moment/static/js/2.49d7fd12.chunk.js",
+    "static/js/2.49d7fd12.chunk.js.map": "/react-DateRangePicker-moment/static/js/2.49d7fd12.chunk.js.map",
+    "static/js/3.b51b032e.chunk.js": "/react-DateRangePicker-moment/static/js/3.b51b032e.chunk.js",
+    "static/js/3.b51b032e.chunk.js.map": "/react-DateRangePicker-moment/static/js/3.b51b032e.chunk.js.map",
+    "index.html": "/react-DateRangePicker-moment/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/react-DateRangePicker-moment/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.49d7fd12.chunk.js.LICENSE.txt": "/react-DateRangePicker-moment/static/js/2.49d7fd12.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.589799a2.js",
+    "static/js/2.49d7fd12.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.201baf66.chunk.js"
+  ]
+}

@@ -1,25 +1,27 @@
-import logo from './logo.svg';
+import React, { useState } from 'react'
+import DateRangePicker from './dateRangepicker/index'
+import moment from 'moment'
 import './App.css';
 
 function App() {
+   const [startDate, setStartDate] = useState(moment().subtract(1, 'month'))
+   const [endDate, setEndDate] = useState(moment)
+   const handleDateClick = ({
+     startDate: callbackStartDate,
+     endDate: callbackEndDate,
+   }) => {
+     setStartDate(callbackStartDate)
+     setEndDate(callbackEndDate)
+   }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <DateRangePicker
+        startDate={startDate}
+        endDate={endDate}
+        onChange={handleDateClick}
+      />
     </div>
-  );
+  )
 }
 
 export default App;
