@@ -24,13 +24,24 @@ const DateRangePickerComp = function ({
 
   // set calendar position to right or left
   React.useEffect(() => {
-    const calendarDom = wrapperRef.current
-    const offsetRight =
-      window.innerWidth - calendarDom.offsetLeft - calendarDom.offsetWidth
-
-    if (656 - calendarDom.offsetWidth > offsetRight) {
-      setCalendarPosition('right')
+    function positioningCalendar(params) {
+      const calendarDom = wrapperRef.current
+      const offsetRight =
+        window.innerWidth - calendarDom.offsetLeft - calendarDom.offsetWidth
+      console.log(
+        window.innerWidth,
+        calendarDom.offsetLeft,
+        calendarDom.offsetWidth
+      )
+      console.log(calendarDom.offsetWidth)
+      console.log(offsetRight)
+      if (656 - calendarDom.offsetWidth > offsetRight) {
+        setCalendarPosition('right')
+      }
     }
+    positioningCalendar()
+    window.addEventListener('resize', positioningCalendar)
+    return window.removeEventListener('resize', () => {})
   }, [])
 
   const handleStartState = () => {
@@ -124,12 +135,14 @@ const DateRangePickerComp = function ({
   )
 }
 
-const DatesWrap = styled.div`
-  display: flex;
+const DateRangePicker = styled.div`
   width: 360px;
   position: relative;
 `
-const DateRangePicker = styled.div`
+
+const DatesWrap = styled.div`
+  display: flex;
   width: 100%;
+  position: relative;
 `
 export default DateRangePickerComp
