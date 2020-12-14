@@ -1,6 +1,6 @@
 {
   "name": "react-daterangepicker-moment",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "easy use date component, built with moment",
   "main": "./dist/bundle.js",
   "dependencies": {
